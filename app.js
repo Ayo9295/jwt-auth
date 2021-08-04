@@ -11,6 +11,11 @@ const app = express();
 
 db();
 
+//DEFAULT ROUTE
+
+app.get("/", (req, res) => {
+  res.send ("ice cold")
+})
 // Body Parser
 app.use(express.json());
 
